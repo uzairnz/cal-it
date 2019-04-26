@@ -23,13 +23,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Drawer Tutorial"), backgroundColor: Colors.redAccent,),
+      appBar: new AppBar(title: new Text("Cal-It"), backgroundColor: Colors.blue,),
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountEmail: new Text("bramvbilsen@gmail.com"),
-              accountName: new Text("Bramvbilsen"),
+              accountEmail: new Text("uzair@hotmail.com"),
+              accountName: new Text("UZAIR"),
               currentAccountPicture: new GestureDetector(
                 child: new CircleAvatar(
                   backgroundImage: new NetworkImage(currentProfilePic),
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: new Center(
-        child: new Text("Drawer Tutorial", style: new TextStyle(fontSize: 35.0)),
+        child: new Text("Home Screen", style: new TextStyle(fontSize: 35.0)),
       )
     );
   }

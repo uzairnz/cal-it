@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+
 
 import './page.dart';
 
@@ -18,12 +20,13 @@ class _HomePageState extends State<HomePage> {
       currentProfilePic = otherProfilePic;
       otherProfilePic = picBackup;
     });
+     final title = 'Grid List';
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Cal-It"), backgroundColor: Colors.blue,),
+      appBar: new AppBar(title: new Text("Cal-It"), backgroundColor: Colors.green,),
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -76,9 +79,20 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: new Center(
-        child: new Text("Home Screen", style: new TextStyle(fontSize: 35.0)),
-      )
+      body: GridView.count(
+          // Create a grid with 2 columns. If you change the scrollDirection to
+          // horizontal, this would produce 2 rows.
+          crossAxisCount: 2,
+          // Generate 100 Widgets that display their index in the List
+          children: List.generate(8, (index) {
+            return Center(
+              child: Text(
+                'Item $index',
+                style: Theme.of(context).textTheme.headline,
+              ),
+            );
+          }),
+        ),
     );
   }
 }

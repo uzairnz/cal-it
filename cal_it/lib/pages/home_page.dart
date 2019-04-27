@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Cal-It"), backgroundColor: Colors.green,),
+      appBar: new AppBar(title: new Text("Cal-It"), backgroundColor: Colors.blue,),
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[

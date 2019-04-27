@@ -9,7 +9,7 @@ class Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text(title), backgroundColor: Colors.green,),
+      appBar: new AppBar(title: new Text(title), backgroundColor: Colors.blue,),
       body: new Center(
         child: new Text(title),
       ),

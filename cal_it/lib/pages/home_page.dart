@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
     });
      final title = 'Grid List';
   }
-
+//Hassan is here
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -35,8 +35,9 @@ class _HomePageState extends State<HomePage> {
               accountName: new Text("UZAIR"),
               currentAccountPicture: new GestureDetector(
                 child: new CircleAvatar(
-                  backgroundImage: new NetworkImage(currentProfilePic),
+                  child: Image.asset("assets/avatar.png")
                 ),
+                
                 onTap: () => print("This is your current account."),
               ),
               otherAccountsPictures: <Widget>[
@@ -84,7 +85,7 @@ class _HomePageState extends State<HomePage> {
           // horizontal, this would produce 2 rows.
           crossAxisCount: 2,
           // Generate 100 Widgets that display their index in the List
-          children: List.generate(8, (index) {
+          children: List.generate(7, (index) {
             return Center(
               child: Text(
                 'Item $index',

@@ -15,4 +15,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 # Cal-it-UI
-<a><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height=90px/></a>
+<a><img alt='Get it on Google Play' src='https://github.com/uzairnz/cal-it/blob/master/cal_it/Screenshot_20190526-001456.png'/></a>

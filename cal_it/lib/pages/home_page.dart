@@ -28,20 +28,21 @@ class _HomePageState extends State<HomePage> {
   double _porciento;
   // double percent=0.1;
 
-    @override
+  @override
   void initState() {
     super.initState();
     //initPlatformState();
     setUpPedometer();
   }
 
-    //inicia codigo pedometer
+  //inicia codigo pedometer
   void setUpPedometer() {
     Pedometer pedometer = new Pedometer();
     _subscription = pedometer.stepCountStream.listen(_onData,
         onError: _onError, onDone: _onDone, cancelOnError: true);
   }
-    void _onData(int stepCountValue) async {
+
+  void _onData(int stepCountValue) async {
     // print(stepCountValue); //impresion numero pasos por consola
     setState(() {
       _stepCountValue = "$stepCountValue";
@@ -113,8 +114,6 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-
-  
 //Hassan is here
   @override
   Widget build(BuildContext context) {

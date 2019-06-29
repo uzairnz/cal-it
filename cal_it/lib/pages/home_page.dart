@@ -167,18 +167,18 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: new ListView(
-          padding: EdgeInsets.all(5.0),
+          padding: EdgeInsets.all(1.0),
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(top: 10.0),
-              width: 250, //ancho
-              height: 250, //largo tambien por numero height: 300
+              padding: EdgeInsets.only(top: 1.0),
+              width: 210, //ancho
+              height: 210, //largo tambien por numero height: 300
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment
                         .bottomCenter, //cambia la iluminacion del degradado
                     end: Alignment.topCenter,
-                    colors: [Color(0xFFA9F5F2), Color(0xFF01DFD7)],
+                    colors: [Color(0xFFFFF), Color(0xFFFFF)],
                   ),
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(27.0),
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                     topRight: Radius.circular(27.0),
                   )),
                    child: new CircularPercentIndicator(
-                  radius: 200.0,
+                  radius: 150.0,
                   lineWidth: 13.0,
                   animation: true,
                   center: Container(
@@ -211,7 +211,7 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20.0,
-                                color: Colors.purpleAccent),
+                                color: Colors.black),
                           ),
                           // height: 50.0,
                           // width: 50.0,
@@ -222,31 +222,31 @@ class _HomePageState extends State<HomePage> {
                   percent: 0.217,
                   //percent: _convert,
                   footer: new Text(
-                    "Pasos:  $_stepCountValue",
+                    "Steps:  $_stepCountValue",
                     style: new TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 12.0,
-                        color: Colors.purple),
+                        color: Colors.black),
                   ),
                   circularStrokeCap: CircularStrokeCap.round,
-                  progressColor: Colors.purpleAccent,
+                  progressColor: Colors.red,
                 ),
             ),
              Divider(
-                height: 5.0,
+                height: 1.0,
               ),
                             Container(
                 width: 80,
                 height: 100,
-                padding: EdgeInsets.only(left: 25.0, top: 10.0, bottom: 10.0),
+                padding: EdgeInsets.only(left: 20.0, top: 1.0, bottom: 1.0),
                 color: Colors.transparent,
                 child: Row(
                   children: <Widget>[
                     new Container(
                       child: new Card(
                         child: Container(
-                          height: 80.0,
-                          width: 80.0,
+                          height: 75.0,
+                          width: 75.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage("assets/images/distance.png"),
@@ -254,24 +254,18 @@ class _HomePageState extends State<HomePage> {
                               alignment: Alignment.topCenter,
                             ),
                           ),
-                          child: Text(
-                            "$_km Km",
-                            textAlign: TextAlign.right,
-                            style: new TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 14.0),
-                          ),
                         ),
-                        color: Colors.white54,
+                        //color: Colors.white54,
                       ),
                     ),
                     VerticalDivider(
-                      width: 20.0,
+                      width: 40.0,
                     ),
                     new Container(
                       child: new Card(
                         child: Container(
-                          height: 80.0,
-                          width: 80.0,
+                          height: 70.0,
+                          width: 70.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage("assets/images/burned.png"),
@@ -284,13 +278,13 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     VerticalDivider(
-                      width: 20.0,
+                      width: 40.0,
                     ),
                     new Container(
                       child: new Card(
                         child: Container(
-                          height: 80.0,
-                          width: 80.0,
+                          height: 70.0,
+                          width: 70.0,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage("assets/images/step.png"),
@@ -306,17 +300,17 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Divider(
-                height: 2,
+                height: 0,
               ),
               Container(
-                padding: EdgeInsets.only(top: 2.0),
+                padding: EdgeInsets.only(top: 0.0),
                 width: 150, //ancho
                 height: 30, //largo tambien por numero height: 300
                 color: Colors.transparent,
                 child: Row(
                   children: <Widget>[
                     new Container(
-                      padding: EdgeInsets.only(left: 40.0),
+                      padding: EdgeInsets.only(left: 28.0),
                       child: new Card(
                         child: Container(
                           child: Text(
@@ -324,15 +318,15 @@ class _HomePageState extends State<HomePage> {
                             textAlign: TextAlign.right,
                             style: new TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 14.0,
-                                color: Colors.white),
+                                fontSize: 16.0,
+                                color: Colors.black),
                           ),
                         ),
-                        color: Colors.purple,
+                        //color: Colors.cyan,
                       ),
                     ),
                     VerticalDivider(
-                      width: 20.0,
+                      width: 36.0,
                     ),
                     new Container(
                       padding: EdgeInsets.only(left: 10.0),
@@ -343,7 +337,7 @@ class _HomePageState extends State<HomePage> {
                             textAlign: TextAlign.right,
                             style: new TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 14.0,
+                                fontSize: 16.0,
                                 color: Colors.white),
                           ),
                         ),
@@ -351,7 +345,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     VerticalDivider(
-                      width: 5.0,
+                      width: 34.0,
                     ),
                     new Container(
                       padding: EdgeInsets.only(left: 10.0),
@@ -362,11 +356,11 @@ class _HomePageState extends State<HomePage> {
                             textAlign: TextAlign.right,
                             style: new TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 14.0,
+                                fontSize: 16.0,
                                 color: Colors.white),
                           ),
                         ),
-                        color: Colors.black,
+                        color: Colors.lightBlue,
                       ),
                     ),
                   ],
